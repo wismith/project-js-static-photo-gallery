@@ -49,6 +49,8 @@ See `gallery.js`.
 1. Use string concatenation to generate a string containing the appropriate HTML
 1. Use [fs.writeFileSync][node-fs-writefilesync] to write the HTML to `site/index.html`.
 
+In other words, running `gallery.js` will generate a new `index.html` based on the list of files in `site/images`. Once you've done that you can run `npm run publish` to publish the photo gallery on the web.
+
 [url-surge]: https://surge.sh/
 [url-lorem-picsum]: https://picsum.photos/
 [node-fs-readdirsync]: https://nodejs.org/api/fs.html#fs_fs_readdirsync_path_options
