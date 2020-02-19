@@ -43,10 +43,12 @@ The `site/images` directory contains a few pre-downloaded placeholder images. Le
 
 Start with the placeholder images, so you can focus on generating the right HTML. After that's working, replace the placeholder images with images of your choosing.
 
-See `gallery.js`.
+Edit `gallery.js` so that running `node gallery.js` updates `site/index.html` according to the images in `site/images`.
 
-1. Using [fs.readdirSync][node-fs-readdirsync], you can get the list of files in a particular directory.
-1. Use string concatenation to generate a string containing the appropriate HTML
+To do this...
+
+1. Use [fs.readdirSync][node-fs-readdirsync] to get a the list of files in a particular directory.
+1. Use string concatenation to generate a string containing the appropriate HTML. At a minimum you'll need one `<img>` tag per image in `sites/images`.
 1. Use [fs.writeFileSync][node-fs-writefilesync] to write the HTML to `site/index.html`.
 
 In other words, running `gallery.js` will generate a new `index.html` based on the list of files in `site/images`. Once you've done that you can run `npm run publish` to publish the photo gallery on the web.
