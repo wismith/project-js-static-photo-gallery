@@ -28,6 +28,8 @@ section.gallery {
 div.photo img {
   border: 5px solid white;
   border-radius: 10px;
+  width: 150px;
+  height: auto;
 }
 
 div.photo {
