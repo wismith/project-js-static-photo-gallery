@@ -1,19 +1,27 @@
 body {
-  background-color: blanchedalmond;
+  background: blanchedalmond;
+  margin: auto;
 }
+
 #page-header h1 {
-  color: red;
+  color: saddlebrown;
 }
 
 section.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+
   width: 70%;
   margin-top: 1%;
   margin-left: 1%;
   margin-right: 1%;
   margin-bottom: 1%;
   background-color: saddlebrown;
+  background-size: cover;
   padding: 20px;
-  height: max-content;
 }
 
 div.photo img {
@@ -22,7 +30,5 @@ div.photo img {
 }
 
 div.photo {
-  display: block;
-  float: left;
-  margin: 20px;
+  margin: 25px;
 }
