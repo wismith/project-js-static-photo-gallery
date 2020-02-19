@@ -5,23 +5,24 @@ body {
 
 #page-header h1 {
   color: saddlebrown;
+  margin: 1%;
 }
 
 section.gallery {
+  float: left;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
-
-  width: 70%;
-  margin-top: 1%;
+  width: 65%;
+  margin-top: 0;
   margin-left: 1%;
-  margin-right: 1%;
-  margin-bottom: 1%;
+  margin-right: 0;
+  margin-bottom: 0;
   background-color: saddlebrown;
   background-size: cover;
   padding: 20px;
+  border-radius: 20px;
 }
 
 div.photo img {
@@ -30,5 +31,21 @@ div.photo img {
 }
 
 div.photo {
-  margin: 25px;
+  margin: 20px;
+}
+
+aside.sidebar {
+  display: block;
+  float: right;
+  width: 25%;
+  align-items: left;
+  margin: 0 1% 0 1%;
+  background-color: saddlebrown;
+  color: blanchedalmond;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+aside.sidebar h2 {
+  text-align: center;
 }
