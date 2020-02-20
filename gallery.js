@@ -31,6 +31,7 @@ let format = [
   '<header id = "page-header">',
   '<h1>Amazing Photo Gallery<h1>',
   '</header>',
+  '<main>',
 ];
 
 let photoGallery = [
@@ -48,6 +49,7 @@ let endFormat = [
   '<h2>Sidebar</h2>',
   '<p>This is a sidebar</p>',
   '</aside>',
+  '</main>',
   '</body>',
   '</html>',
 ];

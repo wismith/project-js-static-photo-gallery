@@ -1,6 +1,17 @@
 body {
   background: blanchedalmond;
   margin: auto;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #page-header h1 {
