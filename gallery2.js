@@ -42,6 +42,18 @@ function presentPhotos(images) {
   return photoGallery;
 }
 
-let htmlDocument = renderContent(presentPhotos(imageFileNames));
+function createSidebar(title, content) {
+  return `
+  <aside class = "sidebar">
+  <h2>${title}</h2>
+  <p>${content}</p>
+  </aside>
+  `;
+}
+
+let sidebar = createSidebar('Sidebar', 'This is a sidebar');
+
+let content = [presentPhotos(imageFileNames), sidebar].join('\n');
+let htmlDocument = renderContent(content);
 
 fs.writeFileSync('./site/index2.html', htmlDocument);
