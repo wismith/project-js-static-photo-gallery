@@ -26,7 +26,7 @@ function presentPhotos(images) {
   let photoGallery = '<section class = "gallery">';
   let imageElements = [];
   for (let imageFile of images) {
-    let element = `<img src = "../site/images/${imageFile}" alt = "">`;
+    let element = `<img src = "./images/${imageFile}" alt = "">`;
     imageElements.push(element);
   }
   for (let element of imageElements) {
@@ -56,4 +56,4 @@ let sidebar = createSidebar('Sidebar', 'This is a sidebar');
 let content = [presentPhotos(imageFileNames), sidebar].join('\n');
 let htmlDocument = renderContent(content);
 
-fs.writeFileSync('./site/index2.html', htmlDocument);
+fs.writeFileSync('./site/index.html', htmlDocument);

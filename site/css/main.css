@@ -1,7 +1,8 @@
 body {
   background: blanchedalmond;
-  margin: auto;
+  margin: auto auto;
   align-items: center;
+  padding: 10px;
 }
 
 h1 {
@@ -9,8 +10,11 @@ h1 {
 }
 
 main {
+  width: 100%;
   display: flex;
   -ms-flex-align: center;
+  align-content: space-around;
+  margin: 0 auto;
 }
 
 #page-header h1 {
@@ -27,8 +31,8 @@ section.gallery {
   width: 65%;
   margin-top: 0;
   margin-left: 1%;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin-right: .5%;
+  margin-bottom: 1%;
   background-color: saddlebrown;
   background-size: cover;
   padding: 20px;
@@ -36,7 +40,7 @@ section.gallery {
 }
 
 div.photo img {
-  border: 5px solid white;
+  border: 5px solid blanchedalmond;
   border-radius: 10px;
   width: 150px;
   height: auto;
@@ -51,7 +55,7 @@ aside.sidebar {
   float: right;
   width: 25%;
   align-items: left;
-  margin: 0 1% 0 1%;
+  margin: 0 1% 1% .5%;
   background-color: saddlebrown;
   color: blanchedalmond;
   padding: 20px;
