@@ -1,3 +1,67 @@
+body {
+  background: blanchedalmond;
+  margin: auto auto;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  -ms-flex-align: center;
+  align-content: space-around;
+  margin: 0 auto;
+}
+
 #page-header h1 {
-  color: red;
+  color: saddlebrown;
+  margin: 1%;
+}
+
+section.gallery {
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin-top: 0;
+  margin-left: 1%;
+  margin-right: .5%;
+  margin-bottom: 1%;
+  background-color: saddlebrown;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+div.photo img {
+  border: 5px solid blanchedalmond;
+  border-radius: 10px;
+  width: 150px;
+  height: auto;
+}
+
+div.photo {
+  margin: 20px;
+}
+
+aside.sidebar {
+  display: block;
+  float: right;
+  width: 25%;
+  align-items: left;
+  margin: 0 1% 1% .5%;
+  background-color: saddlebrown;
+  color: blanchedalmond;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+aside.sidebar h2 {
+  text-align: center;
 }
